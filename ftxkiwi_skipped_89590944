@@ -1,3 +1,6 @@
+cat /var/log/solana/validator.log | grep "89590944"
+
+
 [2021-08-15T12:54:15.572859630Z INFO  solana_core::replay_stage] Gbwg3HCbD9gzma2o6oTqYkDQnojeZ1z7Ygc95DPFA2me reset PoH to tick 5733820416 (within slot 89590943). My next leader slot is 89590944
 [2021-08-15T12:54:15.572883012Z INFO  solana_core::replay_stage] new fork:89590944 parent:89590943 (leader) root:89590910
 [2021-08-15T12:54:15.572886155Z INFO  solana_metrics::metrics] datapoint: replay_stage-new_leader slot=89590944i leader="Gbwg3HCbD9gzma2o6oTqYkDQnojeZ1z7Ygc95DPFA2me"
