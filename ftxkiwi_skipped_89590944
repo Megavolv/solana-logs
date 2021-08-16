@@ -1,0 +1,38 @@
+[2021-08-15T12:54:15.572859630Z INFO  solana_core::replay_stage] Gbwg3HCbD9gzma2o6oTqYkDQnojeZ1z7Ygc95DPFA2me reset PoH to tick 5733820416 (within slot 89590943). My next leader slot is 89590944
+[2021-08-15T12:54:15.572883012Z INFO  solana_core::replay_stage] new fork:89590944 parent:89590943 (leader) root:89590910
+[2021-08-15T12:54:15.572886155Z INFO  solana_metrics::metrics] datapoint: replay_stage-new_leader slot=89590944i leader="Gbwg3HCbD9gzma2o6oTqYkDQnojeZ1z7Ygc95DPFA2me"
+[2021-08-15T12:54:15.572895990Z INFO  solana_metrics::metrics] datapoint: replay_stage-my_leader_slot slot=89590944i
+[2021-08-15T12:54:15.584520125Z INFO  solana_metrics::metrics] datapoint: bank-new_from_parent-heights slot_height=89590944i block_height=73189837i parent_slot_height=89590943i
+[2021-08-15T12:54:15.596052362Z INFO  solana_metrics::metrics] datapoint: bank-timestamp-correction slot=89590944i from_genesis=1616670509i corrected=1628589744i ancestor_timestamp=1628589743i
+[2021-08-15T12:54:15.597898560Z INFO  solana_core::replay_stage] LEADER CHANGE at slot: 89590944 leader: Gbwg3HCbD9gzma2o6oTqYkDQnojeZ1z7Ygc95DPFA2me. I am now the leader
+[2021-08-15T12:54:15.598625782Z INFO  solana_metrics::metrics] datapoint: poh_recorder slot=89590944i tick_lock_contention=37046i record_us=58i flush_cache_no_tick_us=0i flush_cache_tick_us=104081i prepare_send_us=0i send_us=516i ticks_from_record=0i total_sleep_us=350954i tick_overhead=438i record_lock_contention=0i
+[2021-08-15T12:54:15.833757159Z INFO  solana_core::repair_service] repair_stats: [(89590941, 353), (89590942, 269), (89590939, 30), (89590943, 1), (89590944, 3)]
+[2021-08-15T12:54:15.833785508Z INFO  solana_metrics::metrics] datapoint: serve_repair-repair repair-total=656i shred-count=653i highest-shred-count=3i orphan-count=0i repair-highest-slot=89590944i repair-orphan=0i
+[2021-08-15T12:54:15.998202250Z INFO  solana_core::banking_stage] process transactions: max height reached slot: 89590944 height: 5733820464
+[2021-08-15T12:54:16.000522806Z INFO  solana_core::banking_stage] process transactions: max height reached slot: 89590944 height: 5733820464
+[2021-08-15T12:54:16.001489594Z INFO  solana_core::banking_stage] process transactions: max height reached slot: 89590944 height: 5733820464
+[2021-08-15T12:54:16.100339947Z INFO  solana_poh::poh_recorder] poh_record: max_tick_height 5733820480 reached, clearing working_bank 89590944
+[2021-08-15T12:54:16.100366929Z INFO  solana_metrics::metrics] datapoint: leader-slot-start-to-cleared-elapsed-ms slot=89590944i elapsed=502i
+[2021-08-15T12:54:16.100648742Z INFO  solana_metrics::metrics] datapoint: shred_insert_is_full total_time_ms=508i slot=89590944i last_index=1471i num_repaired=0i num_recovered=0i
+[2021-08-15T12:54:16.100810960Z INFO  solana_core::replay_stage] bank frozen: 89590944
+[2021-08-15T12:54:16.100812642Z INFO  solana_metrics::metrics] datapoint: replay-slot-stats slot=89590944i fetch_entries_time=0i fetch_entries_fail_time=0i entry_poh_verification_time=0i entry_transaction_verification_time=0i replay_time=0i replay_total_elapsed=502203i total_entries=0i total_shreds=0i check_us=0i load_us=0i execute_us=0i store_us=0i total_batches_len=0i num_execute_batches=0i serialize_us=0i create_vm_us=0i execute_inner_us=0i deserialize_us=0i changed_account_count=0i total_account_count=0i total_data_size=0i data_size_changed=0i
+[2021-08-15T12:54:16.102010987Z INFO  solana_metrics::metrics] datapoint: broadcast-process-shreds-stats slot=89590944i shredding_time=229091i receive_time=185746i num_data_shreds=1472i slot_broadcast_time=504147i get_leader_schedule_time=5893i serialize_shreds_time=4527i gen_data_time=222926i gen_coding_time=49525i sign_coding_time=18422i coding_send_time=49525i
+[2021-08-15T12:54:16.102473093Z INFO  solana_metrics::metrics] datapoint: broadcast-insert-shreds-stats slot=89590944i end_to_end_elapsed=504611i insert_shreds_elapsed=228309i num_shreds=2944i
+[2021-08-15T12:54:16.103103679Z INFO  solana_runtime::bank] bank frozen: 89590944 hash: G3gnNysHhPFQu6yKMY9fgGv8gwWJqYLU3vfAGXj9M57k accounts_delta: 9KMBQXZTEfVS7zYYMWQaJpkAt4E5L7mMuGfvwpZ1qqn4 signature_count: 3190 last_blockhash: 9H1qkzZTmHbacHWTd3Jsg5V4gTaMjFL9zGC8V76yCmsE capitalization: 1384713670356192520
+[2021-08-15T12:54:16.103117787Z INFO  solana_runtime::bank] accounts hash slot: 89590944 stats: BankHashStats { num_updated_accounts: 6048, num_removed_accounts: 0, num_lamports_stored: 623466961586751644, total_data_len: 10749180, num_executable_accounts: 0 }
+            slot: 89590944,
+[2021-08-15T12:54:16.104218119Z INFO  solana_metrics::metrics] datapoint: broadcast-transmit-shreds-stats slot=89590944i end_to_end_elapsed=506356i transmit_elapsed=256254i send_mmsg_elapsed=10717i get_peers_elapsed=2542i num_shreds=2944i shred_select=233450i
+[2021-08-15T12:54:16.116948182Z INFO  solana_metrics::metrics] datapoint: compute_bank_stats-best_slot computed_slot=89590944i overall_best_slot=89590944i overall_best_hash="G3gnNysHhPFQu6yKMY9fgGv8gwWJqYLU3vfAGXj9M57k" elapsed=1343i
+[2021-08-15T12:54:16.116953579Z INFO  solana_core::replay_stage] CBKJazgTFpookofaFhJXH9jYprFa1mq38FfqsvQQCYLp slot_weight: 89590944 0 0 89590943
+[2021-08-15T12:54:16.116958444Z INFO  solana_metrics::metrics] datapoint: bank_weight slot=89590944i weight="0"
+[2021-08-15T12:54:16.117009076Z INFO  solana_core::replay_stage] voting: 89590944 0
+[2021-08-15T12:54:16.117026415Z INFO  solana_metrics::metrics] datapoint: tower-vote latest=89590944i root=89590911i
+[2021-08-15T12:54:16.122473931Z INFO  solana_core::replay_stage] vote bank: Some((89590944, SameFork)) reset bank: 89590944
+[2021-08-15T12:54:16.123546993Z INFO  solana_poh::poh_recorder] reset poh from: 9H1qkzZTmHbacHWTd3Jsg5V4gTaMjFL9zGC8V76yCmsE,5733820484,89590944 to: 9H1qkzZTmHbacHWTd3Jsg5V4gTaMjFL9zGC8V76yCmsE,89590944
+[2021-08-15T12:54:16.123560556Z INFO  solana_core::replay_stage] Gbwg3HCbD9gzma2o6oTqYkDQnojeZ1z7Ygc95DPFA2me reset PoH to tick 5733820480 (within slot 89590944). My next leader slot is 89590945
+[2021-08-15T12:54:16.123575428Z INFO  solana_core::replay_stage] new fork:89590945 parent:89590944 (leader) root:89590911
+[2021-08-15T12:54:16.124573005Z INFO  solana_metrics::metrics] datapoint: bank-new_from_parent-heights slot_height=89590945i block_height=73189838i parent_slot_height=89590944i
+[2021-08-15T12:54:16.505111732Z INFO  solana_metrics::metrics] datapoint: tower-observed slot=89590944i root=89590911i
+[2021-08-15T12:54:16.510141789Z INFO  solana_core::replay_stage] CBKJazgTFpookofaFhJXH9jYprFa1mq38FfqsvQQCYLp slot_weight: 89590945 0 0 89590944
+[2021-08-15T12:54:18.856332160Z INFO  solana_core::repair_service] repair_stats: [(89590951, 20), (89590948, 98), (89590947, 3), (89590946, 4), (89590944, 2), (89590945, 3)]
+[2021-08-15T12:54:48.325496925Z INFO  solana_runtime::accounts_db] remove_dead_slots_metadata: slots [89590944]
